@@ -14,26 +14,39 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Z.ai Code Scaffold - AI-Powered Development",
-  description: "Modern Next.js scaffold optimized for AI-powered development with Z.ai. Built with TypeScript, Tailwind CSS, and shadcn/ui.",
-  keywords: ["Z.ai", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui", "AI development", "React"],
-  authors: [{ name: "Z.ai Team" }],
+  title: "EchoChat — Intelligent AI Chatbot",
+  description:
+    "EchoChat is an AI-powered conversational assistant designed to help users communicate, learn, and create with natural language.",
+  keywords: [
+    "AI chatbot",
+    "conversational AI",
+    "EchoChat",
+    "natural language processing",
+    "chat assistant",
+    "AI tools",
+    "React",
+    "Next.js",
+  ],
+  authors: [{ name: "EchoChat Team" }],
   icons: {
-    icon: "https://z-cdn.chatglm.cn/z-ai/static/logo.svg",
+    icon: "/icons/echochat-logo.svg",
   },
   openGraph: {
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
-    url: "https://chat.z.ai",
-    siteName: "Z.ai",
+    title: "EchoChat — Intelligent AI Chatbot",
+    description:
+      "An intuitive AI assistant built for natural and productive conversations.",
+    url: "https://echochat.app",
+    siteName: "EchoChat",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Z.ai Code Scaffold",
-    description: "AI-powered development with modern React stack",
+    title: "EchoChat — Intelligent AI Chatbot",
+    description:
+      "Experience seamless conversations with a modern AI-powered chat companion.",
   },
 };
+
 
 export default function RootLayout({
   children,
