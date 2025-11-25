@@ -47,7 +47,7 @@ export default function ChatInterface() {
     setCurrentChatId(newChat.id)
   }
 
-  const renameChat = (chatId: string) => {
+  const renameChat = (chatId: string) => {a
     const chat = chats.find(c => c.id === chatId)
     if (!chat) return
 
