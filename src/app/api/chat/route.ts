@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 
 // SiliconFlow API configuration
 const SILICONFLOW_API_URL = 'https://api.siliconflow.com/v1/chat/completions'
-const SILICONFLOW_MODEL = process.env.SILICONFLOW_MODEL || 'deepseek-ai/DeepSeek-V2.5'
+const SILICONFLOW_MODEL = process.env.SILICONFLOW_MODEL || 'tencent/Hunyuan-MT-7B'
 
 interface ChatMessage {
   role: 'system' | 'user' | 'assistant'
@@ -49,7 +49,7 @@ export async function POST(request: NextRequest) {
 
     // Get API key from environment variables
     const apiKey = process.env.SILICONFLOW_API_KEY
-    const model = process.env.SILICONFLOW_MODEL || 'deepseek-ai/DeepSeek-V2.5'
+    const model = process.env.SILICONFLOW_MODEL || 'tencent/Hunyuan-MT-7B'
     
     console.log('Environment check:', {
       apiKey: apiKey ? '***' + apiKey.slice(-4) : 'MISSING',
@@ -87,7 +87,7 @@ export async function POST(request: NextRequest) {
     // Make request to SiliconFlow API
     console.log('Sending request to SiliconFlow API...')
     
-    const response = await fetch('https://api.siliconflow.cn/v1/chat/completions', {
+    const response = await fetch('https://api.siliconflow.com/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
